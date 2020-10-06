@@ -2,6 +2,7 @@ print("Hello World")
 print("Hello World")
 print("Hello World")
 
-print("\n")
 
-print("Hello World\nHello World\nHello Wolrd\n")
+print("Hello World ", end='')
+print("Hello World ", end='') 
+print("Hello World ", end='')
