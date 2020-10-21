@@ -28,6 +28,9 @@ elif (golongan == "C"):
 elif (golongan == "D"): 
     GajiPokok = 5500000
     potongan = 1
+else :
+    GajiPokok = 0
+    potongan = 0
 
 ptonganNikah = 10
 ptonganAnak = 5 
@@ -49,3 +52,8 @@ if (status == 1):
 print("Potongan (",potongan,"%)    :Rp.",int(terpotong))
 print("-"*38,"-")
 print("Gaji Bersih          :Rp.",int(GajiBersih))
+
+if (GajiBersih == 0):
+    print("\n","="*6, "PERINGATAN","="*6,"\n")
+    print("Golongan yang anda masukan tidak valid")
+    print("Golongan terdiri dari:\nA\nB\nC\nD")
