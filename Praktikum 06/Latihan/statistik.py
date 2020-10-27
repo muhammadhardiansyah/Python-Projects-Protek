@@ -16,7 +16,7 @@ def average(*myData):
 
 
 def maks (*myData):
-    besar = 0
+    besar = myData[0]
     for data in myData:
         if (data > besar):
             besar = data
@@ -25,7 +25,7 @@ def maks (*myData):
 
 
 def min (*myData):
-    kecil = 100000
+    kecil = myData[0]
     for data in myData:
         if (data < kecil):
             kecil = data
