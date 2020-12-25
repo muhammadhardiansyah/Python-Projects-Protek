@@ -10,6 +10,7 @@ while True:
     print("B. Lihat file asli")
     print("C. Enskripsikan ke sandi caesar")
     print("D. Selesai")
+    print("E. Cetak kunci (Opsional)")
     first = str(input("Pilih : "))
     print("-"*50)
     try:
@@ -21,6 +22,7 @@ while True:
             myfile.write(tulis)
             myfile.close()
         elif (first == "B") or (first == "b"):
+            print("\nFile tersimpan di ",simpan,"\n")
             myfile = open(simpan,"r")
             print(myfile.read())
             myfile.close()
@@ -44,8 +46,17 @@ while True:
                     output.write(" ")
             myfile.close()
             output.close()
+            print("\nFile sukses dienskripsi. Silahkan buka di ",save,"\n")
         elif (first == "D") or (first == "d"):
+            print("TERIMA KASIH")
             break
+        elif (first == "E") or (first == "e"):
+            saveKey= str(input("File akan disimpan di? (contoh: e:\\__.txt) : "))
+            keyfile = open(saveKey,"w")
+            keyfile.write("Kunci: ")
+            keyfile.write(str(geser))
+            keyfile.close()
+            print("\nSukses! Buka di",saveKey,"untuk melihat kunci file enskripsi\n")
         else:
             print("Pilihlah sesuai opsi yang tersedia.")
     except NameError:

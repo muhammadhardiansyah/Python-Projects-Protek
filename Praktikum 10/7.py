@@ -16,6 +16,7 @@ while True:
             cari = str(input("Masukan file: (contoh: e:\\__.txt) : "))
             myfile = open(cari,"r")
             myfile.close()
+            print("\nFile ditemukan, silahkan lanjutkan ke opsi B\n")
         elif (first == "B") or (first == "b"):
             print("\n!!!   Jika bilangan di enskripsikan 2, maka masukan 2")
             print("      Jangan tambahkan negatif.                      !!!\n")
@@ -40,7 +41,9 @@ while True:
                     output.write(" ")
             myfile.close()
             output.close()
+            print("\nSukses! Silahkan buka di",save,"untuk melihat hasilnya.\n")
         elif (first == "C") or (first == "c"):
+            print("TERIMA KASIH")
             break
         else:
             print("Pilihlah sesuai opsi yang tersedia.")

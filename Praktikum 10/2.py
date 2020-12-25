@@ -24,6 +24,7 @@ for i in range (len(allNim)):
     myfile.write(a)
     myfile.write("\n")
 myfile.close()
+print("\nSukses!\nPergi ke e:\\Ardianprogram_2.txt untuk melihat hasilnya.\n")
 
 
 

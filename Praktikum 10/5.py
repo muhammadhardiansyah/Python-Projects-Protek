@@ -22,6 +22,7 @@ while True:
                     myfile.close()
                     break
         elif (first == "B") or (first == "b"):
+            print("\nFile tersimpan di ",letakan,"\n")
             myfile = open(letakan,"r")
             print(myfile.read())
             myfile.close()
@@ -37,8 +38,9 @@ while True:
                 output.write("\n")
             myfile.close()
             output.close()
-            print("\nFile berhasil disimpan.")
+            print("\nFile berhasil disimpan. Silahkan buka file di ",save,"\n")
         elif (first == "D"):
+            print("TERIMA KASIH")
             break
         else:
             print("\nPilih sesuai opsi yang tersedia.")
@@ -50,3 +52,5 @@ while True:
         print("\nMasukan lokasi penyimpanan sesuai lokal disk yang tersedia.")
     except FileNotFoundError:
         print("\nDirektori penyimpanan tidak bisa ditemukan.")
+    except ValueError:
+        print("Input dalam opsi A salah. Anda harus mulai ulang program!")
