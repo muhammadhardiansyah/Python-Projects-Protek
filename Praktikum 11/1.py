@@ -8,6 +8,8 @@ def diffDate(x):
         selisihTgl= str(selisih).replace("days, 0:00:00","")
     elif ("day" in str(selisih)):
         selisihTgl= str(selisih).replace("day, 0:00:00","")
+    else:
+        selisihTgl=str(selisih).replace("0:00:00","0")
     hasil = int(selisihTgl)
     return hasil
 try:
